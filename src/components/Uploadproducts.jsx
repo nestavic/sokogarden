@@ -85,7 +85,7 @@ const UploadProducts = () => {
       setPreview('');
       
       setTimeout(() => {
-        navigate('/products');
+        navigate('/Getproducts');
       }, 2000);
     } catch (error) {
       setError(error.response?.data?.message || 'Error uploading product. Please try again.');

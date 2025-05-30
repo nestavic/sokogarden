@@ -1,0 +1,214 @@
+/* M-Pesa Modal Styles */
+.mpesa-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.mpesa-modal-content {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+.mpesa-modal-header {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.mpesa-modal-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+.mpesa-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #777;
+    transition: color 0.2s;
+}
+
+.mpesa-modal-close:hover {
+    color: #333;
+}
+
+.mpesa-modal-body {
+    padding: 2rem;
+}
+
+.mpesa-prompt-animation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.phone-mockup {
+    width: 220px;
+    height: 400px;
+    background: #111;
+    border-radius: 30px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mpesa-prompt {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mpesa-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.mpesa-logo-small {
+    width: 30px;
+    height: 30px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/1200px-M-PESA_LOGO-01.svg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.mpesa-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.mpesa-content h4 {
+    font-size: 1.5rem;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+.mpesa-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.mpesa-cancel, .mpesa-pay {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mpesa-cancel {
+    background: #e74c3c;
+    color: white;
+}
+
+.mpesa-pay {
+    background: #27ae60;
+    color: white;
+}
+
+.mpesa-instructions {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.mpesa-instructions p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.mpesa-instructions p:before {
+    content: "•";
+    margin-right: 8px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.mpesa-modal-footer {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+/* Alert Message Styles */
+.alert-message {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.alert-message.success {
+    background: #e8f8f0;
+    color: #27ae60;
+    border: 1px solid #a5d6a7;
+}
+
+.alert-message.error {
+    background: #ffecec;
+    color: #e74c3c;
+    border: 1px solid #ffcdd2;
+}
+
+.alert-message.info {
+    background: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .mpesa-modal-content {
+        width: 95%;
+    }
+    
+    .phone-mockup {
+        width: 180px;
+        height: 320px;
+    }
+}

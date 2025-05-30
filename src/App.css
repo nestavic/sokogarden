@@ -59,3 +59,76 @@
   height: 100px;
   width: 100%;
 }
+/* Gaming Navbar Styles */
+.gaming-navbar {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-bottom: 2px solid #00f0ff;
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
+}
+
+.gaming-logo {
+  display: inline-block;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.gaming-logo:hover {
+  transform: scale(1.1);
+}
+
+.brand-name {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #50ceee, #008cff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.gaming-link {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  margin: 0 10px;
+  color: #fff !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.gaming-link:hover {
+  color: #00f0ff !important;
+}
+
+.gaming-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00f0ff;
+  transition: width 0.3s ease;
+}
+
+.gaming-link:hover::after {
+  width: 100%;
+
+}
+
+.signup-btn {
+  background: linear-gradient(135deg, #00f0ff 0%, #008cff 100%);
+  border-radius: 5px;
+  padding: 5px 15px !important;
+  color: #000 !important;
+  margin-left: 10px !important;
+}
+
+.signup-btn:hover {
+  color: #000 !important;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+}
+
+
+
+

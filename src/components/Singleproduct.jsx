@@ -88,8 +88,8 @@ const SingleProduct = () => {
                 className="product-content"
             >
                 <div className="product-hero">
-                    <h1 className="product-title">{product?.product_name}</h1>
-                    <p className="product-tagline">Premium Quality • Exclusive Offer</p>
+                    <h1 className="product-title text-light">{product?.product_name}</h1>
+                    <p className="product-tagline text-light">Premium Quality • Exclusive Offer</p>
                 </div>
 
                 <div className="product-grid">
@@ -105,18 +105,18 @@ const SingleProduct = () => {
 
                     <div className="product-details">
                         <div className="product-description">
-                            <h3>Product Details</h3>
+                            <h3 className='text-light'>Product Details</h3>
                             <p>{product?.product_desc}</p>
                         </div>
 
                         <div className="payment-section">
-                            <h3>Complete Your Purchase</h3>
+                            <h3 className='text-light'>Complete Your Purchase</h3>
                             
                             <form onSubmit={submitForm} className="payment-form">
                                 <div className="form-group">
                                     <label className="form-label d-flex align-items-center">
-                                        <FaMobileAlt className="me-2 text-muted" />
-                                        M-PESA Phone Number
+                                        <FaMobileAlt className="me-2  text-light" />
+                                        <h5 className='text-light'>M-PESA Phone Number </h5>
                                     </label>
                                     <input
                                         type="tel"
@@ -129,7 +129,7 @@ const SingleProduct = () => {
                                         <div className="invalid-feedback">{errors.phone}</div>
                                     )}
                                     <small className="text-muted mt-1 d-block">
-                                        Enter phone number in format 254 followed by 9 digits
+                                        <h6 className='text-light'>Enter phone number in format 254 followed by 9 digits</h6>
                                     </small>
                                 </div>
 
@@ -147,7 +147,7 @@ const SingleProduct = () => {
                                         </>
                                     ) : (
                                         <>
-                                            Pay KES {product?.product_cost} Now <FaArrowRight className="ms-2" />
+                                            Pay KES {product?.product_cost} Now <FaArrowRight className="ms-3" />
                                         </>
                                     )}
                                 </motion.button>
@@ -172,9 +172,9 @@ const SingleProduct = () => {
                             )}
 
                             <div className="secure-payment">
-                                <div className="secure-badge">
+                                <div className="secure-badge text-light">
                                     <FaLock className="me-2" />
-                                    <span>100% Secure Payment</span>
+                                    <span className='text-light'>100% Secure Payment</span>
                                 </div>
                                 <div className="payment-methods">
                                     <div className="mpesa-logo"></div>
