@@ -111,9 +111,7 @@ const HomePage = () => {
             <Link to="/getproducts" className="btn btn-light btn-lg mx-2">
               Shop Now <i className="bi bi-arrow-right"></i>
             </Link>
-            <button className="btn btn-outline-light btn-lg mx-2">
-              Subscribe for Deals
-            </button>
+            
           </div>
         </div>
       </section>
