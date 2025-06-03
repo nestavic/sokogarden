@@ -38,7 +38,7 @@ const HomePage = () => {
         <div className="hero-overlay"></div>
         <div className="container hero-content">
           <h1 className="hero-title">Next Level Gaming Starts Here</h1>
-          <p className="hero-subtitle">Discover the hottest titles and exclusive deals</p>
+          <p className="hero-subtitle text-light">Discover the hottest titles and exclusive deals</p>
           <div className="hero-buttons">
             <Link to="/getproducts" className="btn btn-primary btn-lg mx-2">
               Shop Now <i className="bi bi-arrow-right"></i>
